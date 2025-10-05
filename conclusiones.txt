@@ -1,0 +1,24 @@
+Conclusiones técnicas
+
+	1.	Limitación de Cucumber para ejecución de casos Outline desde CSV o JSON
+De manera nativa, Cucumber no permite ejecutar un Scenario Outline directamente con un archivo CSV o JSON sin modificar el patrón screenplay definido en la documentación del proyecto.
+
+	2.	Capturas de pantalla solo en fallos para optimización de reportes
+Actualmente, las capturas se generan únicamente cuando un escenario falla, con el fin de reducir el tamaño y la complejidad del reporte.
+	
+	3.	Problema de persistencia de elementos al navegar hacia adelante y atrás en la web. al avanzar a la siguiente página y regresar a la anterior, el primer producto de la lista desaparece, lo que indica un comportamiento inconsistente del DOM o del manejo del estado de la página.
+
+	4.	Campos del formulario con validación incorrecta
+Se identificó que los campos del formulario no están validados correctamente según las reglas de negocio y los estándares de la aplicación.
+
+	5.	Error en la fecha de confirmación de compra
+Se detectó que la fecha que se muestra en la confirmación de compra no corresponde al timestamp real de la transacción, la fecha mostrada es de un mes atras, lo que ocasiona que el escenario falle ya que se valida con esa fecha.
+
+Observación general
+
+Estas conclusiones evidencian que el suite de pruebas E2E enfrenta desafíos tanto en la parametrización de datos como en la consistencia del frontend.
+Es crucial priorizar mejoras en:
+	•	Integración de datos externos en escenarios Outline.
+	•	Captura de evidencia visual balanceada para reportes E2E.
+	•	Validación de persistencia de elementos al navegar entre páginas.
+	•	Validaciones de formularios consistentes para asegurar la confiabilidad de las pruebas automatizadas.
