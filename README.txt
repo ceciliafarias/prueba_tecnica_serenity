@@ -3,6 +3,29 @@
     Pruebas E2E de Proceso de Compra en E-Commerce
 ================================================================================
 
+CÓMO OBTENER EL PROYECTO
+================================================================================
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/ceciliafarias/prueba_tecnica_serenity.git
+   ```
+
+2. Navegar al directorio del proyecto:
+   ```bash
+   cd prueba_tecnica_serenity
+   ```
+
+3. Si usas HTTPS y necesitas autenticarte, puedes configurar tus credenciales:
+   ```bash
+   git config --global credential.helper store
+   ```
+
+4. Para actualizar el proyecto a la última versión:
+   ```bash
+   git pull origin main
+   ```
+
 DESCRIPCIÓN DEL PROYECTO
 ================================================================================
 
